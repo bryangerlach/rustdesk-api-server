@@ -30,6 +30,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 ALLOWED_HOSTS = ["*"]
 AUTH_USER_MODEL = 'api.UserProfile'      #AppName.自定义user
 
+GHUSER = os.environ.get("GHUSER", '')
+GHBEARER = os.environ.get("GHBEARER", '')
+
 # Application definition
 
 INSTALLED_APPS = [

@@ -1,6 +1,8 @@
 # cython:language_level=3
+import os
+from pathlib import Path
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.hashers import make_password
 from django.http import JsonResponse
 from django.db.models import Q
@@ -20,6 +22,7 @@ import time
 import hashlib
 import sys
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 EFFECTIVE_SECONDS = 7200
 
 def getStrSha256(s):
@@ -386,3 +389,45 @@ def file_log(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'show_file_log.html', {'page_obj':page_obj})
+
+@login_required(login_url='/api/user_action?action=login')
+def clients(request):
+    basedir = os.path.join('clients')
+    custom = os.path.join(basedir,'custom')
+    client_custom_files = {}
+    
+    if os.path.exists(custom):
+        for file in os.listdir(custom):
+            if file.endswith(".exe"):
+                filepath = os.path.join(custom,file)
+                modified = datetime.datetime.fromtimestamp(os.path.getmtime(filepath)).strftime('%Y-%m-%d %I:%M:%S %p')
+                client_custom_files[file] = {
+                    'file': file,
+                    'modified': modified,
+                    'path': custom
+                }
+    return render(request, 'clients.html', {'client_custom_files': client_custom_files})
+
+def download_file(request, filename, path):
+    file_path = os.path.join(str(BASE_DIR),path,filename)
+    with open(file_path, 'rb') as file:
+        response = HttpResponse(file, headers={
+            'Content-Type': 'application/x-binary',
+            'Content-Disposition': f'attachment; filename="{filename}"'
+        })
+    return response
+
+@login_required(login_url='/api/user_action?action=login')
+def download(request):
+    filename = request.GET['filename']
+    path = request.GET['path']
+    return download_file(request, filename, path)
+
+@login_required(login_url='/api/user_cation?action=login')
+def delete_file(request):
+    filename = request.GET['filename']
+    path = request.GET['path']
+    file_path = os.path.join(str(BASE_DIR),path,filename)
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+    return HttpResponseRedirect('/api/clients')

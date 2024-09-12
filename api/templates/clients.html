@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}RustDesk WebUI{% endblock %}
+{% block legend_name %}Custom Clients{% endblock %}
+{% block content %}
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    // Place your globalSearch function or any DOM-related JS here
+    window.globalSearch = function() {
+        var input, filter, tables, tr, td, txtValue;
+        input = document.getElementById("globalSearchInput");
+        filter = input.value.toUpperCase();
+        tables = document.getElementsByTagName("table");
+
+        for (let table of tables) {
+            tr = table.getElementsByTagName("tr");
+            for (let i = 1; i < tr.length; i++) {
+                let row = tr[i];
+                let cells = row.getElementsByTagName("td");
+                let textContent = Array.from(cells).map(cell => cell.textContent.toUpperCase());
+                row.style.display = textContent.some(text => text.includes(filter)) ? "" : "none";
+            }
+        }
+    }
+});
+</script>
+<input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="Search all fields..." style="width: 200px; height: 20px; margin-bottom: 10px;">
+<a href="/api/generator">Client Generator</a>
+<h1>Custom Client Downloads</h1>
+<table class="sortable">
+    <thead></thead>
+    <tbody>
+        <tr>
+            <th>File</th>
+            <th>Date</th>
+        </tr>
+        {% for filename, fileinfo in client_custom_files.items %}
+        <tr>
+            <td><a href='/api/download?filename={{filename}}&path={{fileinfo.path}}'>{{filename}}</a></td>
+            <td>{{fileinfo.modified}}</td>
+            <td><a href='/api/delete_file?filename={{filename}}&path={{fileinfo.path}}'>Delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -23,4 +23,12 @@ urlpatterns = [
     url(r'^conn_log',views.conn_log),
     url(r'^file_log',views.file_log),
     url(r'^audit',views.audit),
+    url(r'^clients',views.clients),
+    url(r'^download',views.download),
+    url(r'^generator',views.generator_view),
+    url(r'^check_for_file',views.check_for_file),
+    url(r'^creategh',views.create_github_run),
+    url(r'^updategh',views.update_github_run),
+    url(r'^save_custom_client',views.save_custom_client),
+    url(r'^delete_file',views.delete_file),
     ]

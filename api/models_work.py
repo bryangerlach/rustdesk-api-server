@@ -142,3 +142,8 @@ class ShareLinkAdmin(admin.ModelAdmin):
     list_display = ('shash', 'uid', 'peers', 'is_used', 'is_expired', 'create_time')
     search_fields = ('peers', )
     list_filter = ('is_used', 'uid', 'is_expired' )
+
+class GithubRun(models.Model):
+    id = models.IntegerField(verbose_name="ID",primary_key=True)
+    uuid = models.CharField(verbose_name="uuid", max_length=100)
+    status = models.CharField(verbose_name="status", max_length=100)
