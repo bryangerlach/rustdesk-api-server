@@ -3,8 +3,7 @@
 {% block title %}RustDesk WebUI{% endblock %}
 {% block legend_name %}{{ "Client Generator" | translate }}{% endblock %}
 {% block content %}
-Please wait...This can take 10-15 minutes (or longer if there are other users).<br><br>
-Status: {{status}}
+{{ "Please wait...This can take 10-15 minutes (or longer if there are other users)." | translate }}<br><br>{{ "Status" | translate }}:{{status}}
 <script>
     setTimeout(function() {
         window.location.replace('/api/check_for_file?filename={{filename}}&uuid={{uuid}}');

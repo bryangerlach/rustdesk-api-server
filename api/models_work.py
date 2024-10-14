@@ -101,15 +101,15 @@ class RustDeskPeerAdmin(admin.ModelAdmin):
     
 class RustDesDevice(models.Model):
     rid = models.CharField(verbose_name=_('客户端ID'), max_length=60, blank=True)
-    cpu = models.CharField(verbose_name='CPU', max_length=100)
+    cpu = models.CharField(verbose_name=_('CPU'), max_length=100)
     hostname = models.CharField(verbose_name=_('主机名'), max_length=100)
     memory = models.CharField(verbose_name=_('内存'), max_length=100)
     os = models.CharField(verbose_name=_('操作系统'), max_length=100)
-    uuid = models.CharField(verbose_name='uuid', max_length=100)
+    uuid = models.CharField(verbose_name=_('uuid'), max_length=100)
     username = models.CharField(verbose_name=_('系统用户名'), max_length=100, blank=True)
     version = models.CharField(verbose_name=_('客户端版本'), max_length=100)
     create_time = models.DateTimeField(verbose_name=_('设备注册时间'), auto_now_add=True)
-    update_time = models.DateTimeField(verbose_name=('设备更新时间'), auto_now=True, blank=True)
+    update_time = models.DateTimeField(verbose_name=_('设备更新时间'), auto_now=True, blank=True)
     ip = models.CharField(verbose_name=_('IP Address'), max_length=16, default="")
     
     class Meta:

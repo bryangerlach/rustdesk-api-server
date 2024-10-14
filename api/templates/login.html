@@ -17,8 +17,7 @@
     <header class="layui-elip">{{ "登录" | translate }}</header>
     <form class="layui-form">
         <div class="layui-input-inline">
-            <input type="text" name="account" required lay-verify="required" placeholder="{{ "用户名" | translate }}" autocomplete="off"
-                   class="layui-input">
+            <input type="text" name="account" required lay-verify="required" placeholder="{{ "用户名" | translate }}" autocomplete="off" class="layui-input">
         </div>
         <div class="layui-input-inline">
             <input type="password" name="password" required lay-verify="required" placeholder="{{ "密码" | translate }}" autocomplete="off"
@@ -28,7 +27,7 @@
             <button lay-submit lay-filter="login" class="layui-btn">{{ "登录" | translate }}</button>
         </div>
         <hr/>
-        <p><a href="/api/user_action?action=register" class="fl">{{ "立即注册" | translate }}</a><a href="javascript:;" class="fr">{{ "忘记密码？" | translate }}</a></p>
+        <p><a href="/api/user_action?action=register" class="fl">{{ "立即注册" | translate }}</a><a href="javascript:;" class="fr">{{  "忘记密码？" | translate }}</a></p>
     </form>
 </div>
  
@@ -39,6 +38,17 @@
  
         // 操作对象
         var form = layui.form;
+      
+        form.config = {
+            verify: {
+                required: function(value) {
+                    if (!/[\S]+/.test(value)) {
+                        return '{{ "必填项不能为空" | translate }}';
+                    }
+                    },
+            },
+            autocomplete: null
+        };
         var $ = layui.jquery;
         form.on('submit(login)',function (data) {
             console.log(data.field);
@@ -53,14 +63,26 @@
 		    				//layer.alert(resp.msg,{icon:1});
                             location.href = resp.url;
 		    			} else {
-		    				layer.alert(resp.msg,{icon:5});
+		    				layer.alert(resp.msg,
+                                {
+                                icon:5, 
+                                title:'{{ "信息" | translate }}',
+                                btn:['{{ "确定" | translate }}']
+                                }
+                            );
 		    			}
                 }
             })
             return false;
         })
         $('.fr').on('click', function(){
-            layer.alert("{{ "这么简易的东西，忘记密码这功能就没必要了吧。" | translate }}",{icon:5});
+            layer.alert('{{ "这么简易的东西，忘记密码这功能就没必要了吧。" | translate }}',
+                {
+                icon:5,
+                title:'{{ "信息" | translate }}',
+                btn:['{{ "确定" | translate }}']
+                }
+            );
         })
 
  

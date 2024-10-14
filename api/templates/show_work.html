@@ -8,7 +8,7 @@
   <div class="layui-row layui-col-space15">
     {% if not show_all %}
     <div class="layui-col-md15">
-      <input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="Search all fields..." style="width: 200px; height: 20px; margin-bottom: 10px;">
+      <input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="{{ "Search all fields..." | translate }}" style="width: 200px; height: 20px; margin-bottom: 10px;">
       <div class="layui-card">
         <div class="layui-card-header">{{ online_count_single }}/{{page_obj.paginator.count }}: {{ "User Devices Online" | translate }} - 【{{ "用户名" | translate }}:{{u.username}}】
         </div>
@@ -78,7 +78,7 @@
     
     {% if u.is_admin and show_all %}
     <div class="layui-col-md15">
-      <input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="Search all fields..." style="width: 200px; height: 20px; margin-bottom: 10px;">
+      <input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="{{ "Search all fields..." | translate }}" style="width: 200px; height: 20px; margin-bottom: 10px;">
       <div class="layui-card">
         <div class="layui-card-header">{{ online_count_all }}/{{page_obj.paginator.count }}: {{ "All Devices" | translate }} &raquo;
           <div class="layui-btn" ><a href="/api/down_peers">{{ "导出xlsx" | translate }}</a></div>

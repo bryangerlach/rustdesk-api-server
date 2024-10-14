@@ -1,5 +1,6 @@
 {% extends phone_or_desktop %}
 {% load my_filters %}
+{% load i18n %}
 {% block title %}RustDesk WebUI{% endblock %}
 {% block legend_name %}{{ "Client Downloads" | translate }}{% endblock %}
 {% block content %}
@@ -44,17 +45,17 @@
     }
 });
 </script>
-<input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="Search all fields..." style="width: 200px; height: 20px; margin-bottom: 10px;">
-<a href="/api/generator">Client Generator</a>
+<input type="text" id="globalSearchInput" onkeyup="globalSearch()" placeholder="{{ "Search all fields..." | translate }}" style="width: 200px; height: 20px; margin-bottom: 10px;">
+<a href="/api/generator">{% trans "Client Generator" %}</a>
 <div class="container">
     <div class="section">
-        <h1>Github Clients</h1>
+        <h1>{% trans "Github Clients" %}</h1>
         <table class="sortable">
             <thead></thead>
             <tbody>
                 <tr>
-                    <th>File</th>
-                    <th>Date</th>
+                    <th>{% trans "File" %}</th>
+                    <th>{% trans "Date" %}</th>
                 </tr>
                 {% for filename, fileinfo in client_files.items %}
                 <tr>
@@ -66,19 +67,19 @@
         </table>
     </div>
     <div class="section">
-        <h1>Custom Clients</h1>
+        <h1>{% trans "Custom clients" %}</h1>
         <table class="sortable">
             <thead></thead>
             <tbody>
                 <tr>
-                    <th>File</th>
-                    <th>Date</th>
+                    <th>{% trans "File" %}</th>
+                    <th>{% trans "Date" %}</th>
                 </tr>
                 {% for filename, fileinfo in client_custom_files.items %}
                 <tr>
                     <td><a href='/api/download?filename={{filename}}&path={{fileinfo.path}}'>{{filename}}</a></td>
                     <td>{{fileinfo.modified}}</td>
-                    <td><a href='/api/delete_file?filename={{filename}}&path={{fileinfo.path}}'>Delete</a></td>
+                    <td><a href='/api/delete_file?filename={{filename}}&path={{fileinfo.path}}'>{% trans "Delete" %}</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

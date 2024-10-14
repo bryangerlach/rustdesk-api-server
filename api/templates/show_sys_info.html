@@ -3,12 +3,12 @@
 {% block title %}RustDesk WebUI{% endblock %}
 {% block legend_name %}{{ "Server Information" | translate }}{% endblock %}
 {% block content %}
-<br>Hostname: 
+<br>{{ "Hostname" | translate }}:
 {{ hostname }}
-<br>CPU Usage: 
+<br>{{ "CPU Usage" | translate }}:
 {{ cpu_usage }}
-<br>Memory Usage: 
+<br>{{ "Memory Usage" | translate }}:
 {{ memory_usage }}
-<br>Disk Usage: 
+<br>{{ "Disk Usage" | translate }}:
 {{ disk_usage }}
 {% endblock %}

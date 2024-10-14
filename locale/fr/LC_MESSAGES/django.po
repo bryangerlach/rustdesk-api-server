@@ -4,9 +4,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-13 23:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: FULL NAME <jimmy.galland@celjim.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: en\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,130 +14,134 @@ msgstr ""
 
 #: api/admin_user.py:14 api/front_locale.py:28
 msgid "密码"
-msgstr "Password"
+msgstr "Mot de passe"
 
 #: api/admin_user.py:15
 msgid "再次输入密码"
-msgstr "Re-enter password"
+msgstr "Confirmez mot de passe"
 
 #: api/admin_user.py:26
 msgid "密码校验失败，两次密码不一致。"
-msgstr "Password verification failed, passwords do not match."
+msgstr ""
+"La vérification du mot de passe a échoué, les mots de passe ne correspondent "
+"pas."
 
 #: api/admin_user.py:44
 msgid "密码Hash值"
-msgstr "Password Hash Value"
+msgstr "Valeur de hachage du mot de passe"
 
 #: api/admin_user.py:75
 msgid "基本信息"
-msgstr "Basic Information"
+msgstr "Informations de base"
 
 #: api/admin_user.py:100 api/admin_user.py:101
 msgid "RustDesk自建Web"
-msgstr "RustDesk Self-Hosted Web"
+msgstr "Web RustDesk auto-hébergé"
 
 #: api/front_locale.py:4
 msgid "管理后台"
-msgstr "Admin Panel"
+msgstr "Panneau d'administration"
 
 #: api/front_locale.py:5
 msgid "ID列表"
-msgstr "ID List"
+msgstr "Liste d'ID"
 
 #: api/front_locale.py:6
 msgid "分享机器"
-msgstr "Share Machine"
+msgstr "Partager la machine"
 
 #: api/front_locale.py:7
 msgid "这么简易的东西，忘记密码这功能就没必要了吧。"
 msgstr ""
-"For such a simple thing, the forgot password feature is unnecessary, right?"
+"Pour une chose aussi simple, la fonction de mot de passe oublié n’est pas "
+"nécessaire, n’est-ce pas ?"
 
 #: api/front_locale.py:8
 msgid "立即注册"
-msgstr "Register Now"
+msgstr "Inscrivez-vous maintenant"
 
 #: api/front_locale.py:9
 msgid "创建时间"
-msgstr "Creation Time"
+msgstr "Temps de création"
 
 #: api/front_locale.py:10
 msgid "注册成功，请前往登录页登录。"
-msgstr "Registration successful, please go to the login page to login."
+msgstr "Inscription réussie, veuillez vous rendre sur la page de connexion"
 
 #: api/front_locale.py:11
 msgid "注册日期"
-msgstr "Registration Date"
+msgstr "Date d'inscription"
 
 #: api/front_locale.py:12
 msgid ""
 "2、所分享的机器，被分享人享有相同的权限，如果机器设置了保存密码，被分享人也可"
 "以直接连接。"
 msgstr ""
-"2. The shared machine grants the same permissions to the recipient. If the "
-"machine is set to save password, the recipient can also connect directly."
+"2. La machine partagée accorde les mêmes autorisations au destinataire. Si "
+"la machine est configurée pour enregistrer le mot de passe, le destinataire "
+"peut également se connecter directement."
 
 #: api/front_locale.py:13
 msgid "导出xlsx"
-msgstr "Export as xlsx"
+msgstr "Exporter au format xlsx"
 
 #: api/front_locale.py:14
 msgid "生成分享链接"
-msgstr "Generate Share Link"
+msgstr "Générer un lien de partage"
 
 #: api/front_locale.py:15
 msgid "请输入8~20位密码。可以包含字母、数字和特殊字符。"
 msgstr ""
-"Please enter a password of 8~20 characters. It can contain letters, numbers, "
-"and special characters."
+"Veuillez saisir un mot de passe de 8 à 20 caractères. Il peut contenir des "
+"lettres, des chiffres, et des caractères spéciaux."
 
 #: api/front_locale.py:16
 msgid "尾页"
-msgstr "Last Page"
+msgstr "Dernière page"
 
 #: api/front_locale.py:17
 msgid "请确认密码"
-msgstr "Please confirm password"
+msgstr "Veuillez confirmer le mot de passe"
 
 #: api/front_locale.py:18
 msgid "注册"
-msgstr "Register"
+msgstr "S'enregistrer"
 
 #: api/front_locale.py:19 api/models_work.py:106
 msgid "内存"
-msgstr "Memory"
+msgstr "Mémoire"
 
 #: api/front_locale.py:20
 msgid "首页"
-msgstr "Home"
+msgstr "Accueil"
 
 #: api/front_locale.py:21
 msgid "网页控制"
-msgstr "Web Control"
+msgstr "Contrôle Web"
 
 #: api/front_locale.py:22
 msgid "注册时间"
-msgstr "Registration Time"
+msgstr "Heure d'inscription"
 
 #: api/front_locale.py:23
 msgid "链接地址"
-msgstr "Link Address"
+msgstr "Adresse du lien"
 
 #: api/front_locale.py:24
 msgid "请输入密码"
-msgstr "Please enter password"
+msgstr "Veuillez entrer le mot de passe"
 
 #: api/front_locale.py:25 api/models_work.py:82 api/models_work.py:109
 msgid "系统用户名"
-msgstr "System Username"
+msgstr "Nom d'utilisateur système"
 
 #: api/front_locale.py:26
 msgid "状态"
-msgstr "Status"
+msgstr "État"
 
 #: api/front_locale.py:27
 msgid "已有账号？立即登录"
-msgstr "Already have an account? Login now"
+msgstr "Vous avez déjà un compte ? Connectez-vous maintenant"
 
 #: api/front_locale.py:29 api/models_work.py:84
 msgid "别名"
@@ -145,60 +149,61 @@ msgstr "Alias"
 
 #: api/front_locale.py:30
 msgid "上一页"
-msgstr "Previous Page"
+msgstr "Page précédente"
 
 #: api/front_locale.py:31
 msgid "更新时间"
-msgstr "Update Time"
+msgstr "Heure de mise à jour"
 
 #: api/front_locale.py:32
 msgid "综合屏"
-msgstr "Comprehensive Screen"
+msgstr "Écran complet"
 
 #: api/front_locale.py:33 api/models_work.py:85
 msgid "平台"
-msgstr "Platform"
+msgstr "Plate-forme"
 
 #: api/front_locale.py:34
 msgid "全部用户"
-msgstr "All Users"
+msgstr "Tous les utilisateurs"
 
 #: api/front_locale.py:35
 msgid "注册页"
-msgstr "Registration Page"
+msgstr "Page d'inscription"
 
 #: api/front_locale.py:36
 msgid "分享机器给其他用户"
-msgstr "Share machine with other users"
+msgstr "Partager la machine avec d'autres utilisateurs"
 
 #: api/front_locale.py:37
 msgid "所有设备"
-msgstr "All Devices"
+msgstr "Tous les appareils"
 
 #: api/front_locale.py:38
 msgid "连接密码"
-msgstr "Connection Password"
+msgstr "Mot de passe de connexion"
 
 #: api/front_locale.py:39
 msgid "设备统计"
-msgstr "Device Statistics"
+msgstr "Statistiques de l'appareil"
 
 #: api/front_locale.py:40
 msgid "所属用户"
-msgstr "Belongs to User"
+msgstr "Appartient à l'utilisateur"
 
 #: api/front_locale.py:41
 msgid "分享"
-msgstr "Share"
+msgstr "Partager"
 
 #: api/front_locale.py:42
 msgid "请输入用户名"
-msgstr "Please enter username"
+msgstr "Veuillez entrer votre nom d'utilisateur"
 
 #: api/front_locale.py:43
 msgid "1、链接有效期为15分钟，切勿随意分享给他人。"
 msgstr ""
-"1. The link is valid for 15 minutes. Do not share it with others casually."
+"1. Le lien est valable 15 minutes. Ne le partagez pas avec d'autres sans "
+"précausion."
 
 #: api/front_locale.py:44 api/models_work.py:104
 msgid "CPU"
@@ -206,44 +211,45 @@ msgstr "CPU"
 
 #: api/front_locale.py:45 api/models_work.py:81 api/models_work.py:103
 msgid "客户端ID"
-msgstr "Client ID"
+msgstr "ID Client "
 
 #: api/front_locale.py:46
 msgid "下一页"
-msgstr "Next Page"
+msgstr "Page suivante"
 
 #: api/front_locale.py:47 api/front_locale.py:79
 msgid "登录"
-msgstr "Login"
+msgstr "Se connecter"
 
 #: api/front_locale.py:48
 msgid "退出"
-msgstr "Logout"
+msgstr "Se déconnecter"
 
 #: api/front_locale.py:49
 msgid "请将要分享的机器调整到右侧"
-msgstr "Please adjust the machines to be shared to the right"
+msgstr "Veuillez ajuster les machines à partager vers la droite"
 
 #: api/front_locale.py:50
 msgid "成功！如需分享，请复制以下链接给其他人：<br>"
 msgstr ""
-"Success! If you need to share, please copy the following link to others:<br>"
+"Réussi! Si vous avez besoin de partager, veuillez copier le lien suivant :"
+"<br>"
 
 #: api/front_locale.py:51
 msgid "忘记密码？"
-msgstr "Forgot Password?"
+msgstr "Mot de passe oublié ?"
 
 #: api/front_locale.py:52
 msgid "计算机名"
-msgstr "Computer Name"
+msgstr "Nom de l'ordinateur"
 
 #: api/front_locale.py:53
 msgid "两次输入密码不一致!"
-msgstr "Passwords do not match!"
+msgstr "Les mots de passe ne correspondent pas !"
 
 #: api/front_locale.py:54
 msgid "页码"
-msgstr "Page Number"
+msgstr "Numéro de page"
 
 #: api/front_locale.py:55
 msgid "版本"
@@ -251,83 +257,82 @@ msgstr "Version"
 
 #: api/front_locale.py:56 api/models_user.py:32 api/models_work.py:9
 msgid "用户名"
-msgstr "Username"
+msgstr "Nom d'utilisateur"
 
 #: api/front_locale.py:57
 msgid ""
 "3、为保障安全，链接有效期为15分钟、链接仅有效1次。链接一旦被（非分享人的登录"
 "用户）访问，分享生效，后续访问链接失效。"
 msgstr ""
-"3. For security reasons, the link is valid for 15 minutes and only valid "
-"once. Once the link is accessed by a user (other than the sharing person), "
-"the sharing becomes effective, and subsequent access to the link will be "
-"invalid."
+"3. Pour des raisons de sécurité, le lien est valable 15 minutes et "
+"uniquement valable une fois. Une fois que le lien est utilisé par un "
+"utilisateur (autre que la personne qui partage), le partage devient "
+"effectif, et l'accès ultérieur au lien serainvalide."
 
 #: api/front_locale.py:58
 msgid "系统"
-msgstr "System"
+msgstr "Système"
 
 #: api/front_locale.py:59
 msgid "我的机器"
-msgstr "My Machine"
+msgstr "Ma machine"
 
 #: api/front_locale.py:60
-#, fuzzy
 msgid "信息"
-msgstr "Basic Information"
+msgstr "Information"
 
 #: api/front_locale.py:61
 msgid "远程ID"
-msgstr "Remote ID"
+msgstr "ID distant"
 
 #: api/front_locale.py:62
 msgid "远程别名"
-msgstr "Remote Alias"
+msgstr "Alias distant"
 
 #: api/front_locale.py:63 api/models_work.py:11 api/models_work.py:80
 #: api/models_work.py:128
 msgid "用户ID"
-msgstr "User ID"
+msgstr "ID Utilisateur"
 
 #: api/front_locale.py:64
 msgid "用户别名"
-msgstr "User Alias"
+msgstr "Alias utilisateur"
 
 #: api/front_locale.py:65
 msgid "用户IP"
-msgstr "User IP"
+msgstr "IP Utilisateur"
 
 #: api/front_locale.py:66
 msgid "文件大小"
-msgstr "Filesize"
+msgstr "Taille du fichier"
 
 #: api/front_locale.py:67
 msgid "发送/接受"
-msgstr "Sent/Received"
+msgstr "Envoyé/Reçu"
 
 #: api/front_locale.py:68
 msgid "记录于"
-msgstr "Logged At"
+msgstr "Connecté à"
 
 #: api/front_locale.py:69
 msgid "连接开始时间"
-msgstr "Connection Start Time\t"
+msgstr "Heure de début de connexion\t"
 
 #: api/front_locale.py:70
 msgid "连接结束时间"
-msgstr "Connection End Time"
+msgstr "Heure de fin de connexion"
 
 #: api/front_locale.py:71
 msgid "时长"
-msgstr "Duration"
+msgstr "Durée"
 
 #: api/front_locale.py:72
 msgid "连接日志"
-msgstr "Connection Log"
+msgstr "Journal de connexion"
 
 #: api/front_locale.py:73
 msgid "文件传输日志"
-msgstr "File Transfer Log"
+msgstr "Journal de transfert de fichiers"
 
 #: api/front_locale.py:74
 msgid "页码 #"
@@ -335,21 +340,19 @@ msgstr "Page #"
 
 #: api/front_locale.py:75
 msgid "下一页 #"
-msgstr "Next #"
+msgstr "Suivant #"
 
 #: api/front_locale.py:76
 msgid "上一页 #"
-msgstr "Previous #"
+msgstr "Précédent #"
 
 #: api/front_locale.py:77
-#, fuzzy
 msgid "第一页"
-msgstr "First"
+msgstr "Premier"
 
 #: api/front_locale.py:78
-#, fuzzy
 msgid "上页"
-msgstr "Previous Page"
+msgstr "Page précédente"
 
 #: api/front_locale.py:80
 msgid "确定"
@@ -357,165 +360,167 @@ msgstr "Ok"
 
 #: api/front_locale.py:81
 msgid "Gauge"
-msgstr ""
+msgstr "Trop faible"
 
 #: api/front_locale.py:82
 msgid "Search all fields..."
-msgstr ""
+msgstr "Rechercher dans tous les champs..."
 
 #: api/front_locale.py:83
 msgid "Devices"
-msgstr ""
+msgstr "Appareils"
 
 #: api/front_locale.py:84
 msgid "File Transfer Log"
-msgstr ""
+msgstr "Journal de transfert de fichiers"
 
 #: api/front_locale.py:85 api/models_work.py:88 api/models_work.py:113
 msgid "IP Address"
-msgstr ""
+msgstr "Adresse IP"
 
 #: api/front_locale.py:86
 msgid "User Devices"
-msgstr ""
+msgstr "Appareils utilisateur"
 
 #: api/front_locale.py:87
 msgid "User Devices Online"
-msgstr ""
+msgstr "Appareils utilisateur"
 
 #: api/front_locale.py:88
 msgid "必填项不能为空"
-msgstr "Required fields cannot be empty"
+msgstr "Les champs obligatoires ne peuvent pas être vides"
 
 #: api/front_locale.py:89
 msgid "Connection Log"
-msgstr ""
+msgstr "ID de connexion"
 
 #: api/front_locale.py:90 api/front_locale.py:101
 msgid "Server Information"
-msgstr ""
+msgstr "Information Serveur"
 
 #: api/front_locale.py:91
 msgid "Client Downloads"
-msgstr ""
+msgstr "Téléchargement client"
 
 #: api/front_locale.py:92
 msgid "Delete"
-msgstr ""
+msgstr "Effacer"
 
 #: api/front_locale.py:93
 msgid "File"
-msgstr ""
+msgstr "Taille du fichier"
 
 #: api/front_locale.py:94
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: api/front_locale.py:95
 msgid "Client Generator"
-msgstr ""
+msgstr "Generateur de client"
 
 #: api/front_locale.py:96
 msgid "Github Clients"
-msgstr ""
+msgstr "Clients Github"
 
 #: api/front_locale.py:97
 msgid "Custom App Name"
-msgstr ""
+msgstr "Nom de l'application personnalisée"
 
 #: api/front_locale.py:98
 msgid "Connection Type"
-msgstr ""
+msgstr "ID de connexion"
 
 #: api/front_locale.py:99
 msgid "Allow Installation"
-msgstr ""
+msgstr "Autoriser l'installation"
 
 #: api/front_locale.py:100
 msgid "Allow Settings"
-msgstr ""
+msgstr "Autoriser la configuration"
 
 #: api/front_locale.py:102
 msgid ""
 "Please wait...This can take 10-15 minutes (or longer if there are other "
 "users)."
 msgstr ""
+"Veuillez patienter... Cela peut prendre 10 à 15 minutes (ou plus s'il y en a "
+"d'autres utilisateurs)."
 
 #: api/front_locale.py:103
 msgid "Status"
-msgstr ""
+msgstr "Etat"
 
 #: api/front_locale.py:104
 msgid "Hostname"
-msgstr ""
+msgstr "Nom d'hôte"
 
 #: api/front_locale.py:105
 msgid "CPU Usage"
-msgstr ""
+msgstr "Utilisation processeur"
 
 #: api/front_locale.py:106
 msgid "Memory Usage"
-msgstr ""
+msgstr "Utilisation mémoire"
 
 #: api/front_locale.py:107
 msgid "Disk Usage"
-msgstr ""
+msgstr "Utilisation du disque"
 
 #: api/front_locale.py:108
 msgid "Custom clients"
-msgstr ""
+msgstr "Clients personnalisés"
 
 #: api/front_locale.py:109
 msgid "All Devices"
-msgstr ""
+msgstr "Appareils"
 
 #: api/front_locale.py:110
 msgid "Sent/Received"
-msgstr ""
+msgstr "Envoyé/Reçu"
 
 #: api/front_locale.py:111
 msgid "Remote Alias"
-msgstr ""
+msgstr "Alias distant"
 
 #: api/front_locale.py:112
 msgid "User Alias"
-msgstr ""
+msgstr "Appareils utilisateur"
 
 #: api/front_locale.py:113 api/models_work.py:43
 msgid "User IP"
-msgstr ""
+msgstr "IP utilisateur"
 
 #: api/front_locale.py:114
 msgid "Connection Start Time"
-msgstr ""
+msgstr "Heure de début de connexion"
 
 #: api/front_locale.py:115
 msgid "Connection End Time"
-msgstr ""
+msgstr "Heure de fin de connexion"
 
 #: api/models_user.py:40
 msgid "登录信息:"
-msgstr "Login Information:"
+msgstr "Informations de connexion :"
 
 #: api/models_user.py:42
 msgid "是否激活"
-msgstr "Is Active"
+msgstr "Est actif"
 
 #: api/models_user.py:43
 msgid "是否管理员"
-msgstr "Is Administrator"
+msgstr "Est administrateur"
 
 #: api/models_user.py:82
 msgid "用户"
-msgstr "User"
+msgstr "Utilisateur"
 
 #: api/models_user.py:83
 msgid "用户列表"
-msgstr "User List"
+msgstr "Liste utilisateur"
 
 #: api/models_work.py:10
 msgid "RustDesk ID"
-msgstr "RustDesk ID"
+msgstr "ID RustDesk"
 
 #: api/models_work.py:12 api/models_work.py:31 api/models_work.py:108
 msgid "uuid"
@@ -523,253 +528,255 @@ msgstr "UUID"
 
 #: api/models_work.py:13
 msgid "access_token"
-msgstr "Access Token"
+msgstr "Jeton d'accès"
 
 #: api/models_work.py:14
 msgid "登录时间"
-msgstr "Login Time"
+msgstr "Heure de connexion"
 
 #: api/models_work.py:19
 msgid "Token列表"
-msgstr "Token List"
+msgstr "Liste des jetons"
 
 #: api/models_work.py:22 api/models_work.py:39
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: api/models_work.py:23
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: api/models_work.py:24
 msgid "Connection ID"
-msgstr ""
+msgstr "ID de connexion"
 
 #: api/models_work.py:25
 msgid "From IP"
-msgstr ""
+msgstr "Depuis l'IP"
 
 #: api/models_work.py:26
 msgid "From ID"
-msgstr ""
+msgstr "Depuis l'ID"
 
 #: api/models_work.py:27
 msgid "To ID"
-msgstr ""
+msgstr "Vers l'ID"
 
 #: api/models_work.py:28
 msgid "Connected"
-msgstr ""
+msgstr "Connecté"
 
 #: api/models_work.py:29
 msgid "Disconnected"
-msgstr ""
+msgstr "Déconnecté"
 
 #: api/models_work.py:30
 msgid "Session ID"
-msgstr ""
+msgstr "ID de session"
 
 #: api/models_work.py:40
 msgid "Path"
-msgstr ""
+msgstr "Chemin"
 
 #: api/models_work.py:41
 msgid "Remote ID"
-msgstr ""
+msgstr "ID distant"
 
 #: api/models_work.py:42
 msgid "User ID"
-msgstr ""
+msgstr "ID de l'utilisateur"
 
 #: api/models_work.py:44
 msgid "Filesize"
-msgstr ""
+msgstr "Taille du fichier"
 
 #: api/models_work.py:45
 msgid "Direction"
-msgstr ""
+msgstr "Direction"
 
 #: api/models_work.py:46
 msgid "Logged At"
-msgstr ""
+msgstr "Connecté à"
 
 #: api/models_work.py:62
 msgid "所属用户ID"
-msgstr "Belongs to User ID"
+msgstr "Appartient à l'ID utilisateur"
 
 #: api/models_work.py:63
 msgid "标签名称"
-msgstr "Tag Name"
+msgstr "Nom de la balise"
 
 #: api/models_work.py:64
 msgid "标签颜色"
-msgstr "Tag Color"
+msgstr "Couleur de la balise"
 
 #: api/models_work.py:69
 msgid "Tags列表"
-msgstr "Tags List"
+msgstr "Liste des balises"
 
 #: api/models_work.py:83
 msgid "操作系统名"
-msgstr "Operating System Name"
+msgstr "Nom du système d'exploitation"
 
 #: api/models_work.py:86
 msgid "标签"
-msgstr "Tag"
+msgstr "Balise"
 
 #: api/models_work.py:87
 msgid "设备链接密码"
-msgstr "Device Connection Password"
+msgstr "Mot de passe de connexion à l'appareil"
 
 #: api/models_work.py:93
 msgid "Peers列表"
-msgstr "Peers List"
+msgstr "Liste des machines distantes"
 
 #: api/models_work.py:105
 msgid "主机名"
-msgstr "Hostname"
+msgstr "Nom d'hôte"
 
 #: api/models_work.py:107
 msgid "操作系统"
-msgstr "Operating System"
+msgstr "Système opérateur"
 
 #: api/models_work.py:110
 msgid "客户端版本"
-msgstr "Client Version"
+msgstr "Version du Client"
 
 #: api/models_work.py:111
 msgid "设备注册时间"
-msgstr "Device Registration Time"
+msgstr "Heure d'enregistrement de l'appareil"
 
 #: api/models_work.py:112
-#, fuzzy
 msgid "设备更新时间"
-msgstr "Update Time"
+msgstr "Heure de mise à jour"
 
 #: api/models_work.py:117
 msgid "设备"
-msgstr "Device"
+msgstr "Appareil"
 
 #: api/models_work.py:118
 msgid "设备列表"
-msgstr "Device List"
+msgstr "Liste des appareils"
 
 #: api/models_work.py:129
 msgid "链接Key"
-msgstr "Link Key"
+msgstr "Lien de la clé"
 
 #: api/models_work.py:130
 msgid "机器ID列表"
-msgstr "Machine ID List"
+msgstr "Liste des ID d'ordinateur"
 
 #: api/models_work.py:131
 msgid "是否使用"
-msgstr "Is Used"
+msgstr "Est utilisé"
 
 #: api/models_work.py:132
 msgid "是否过期"
-msgstr "Is Expired"
+msgstr "Est expiré"
 
 #: api/models_work.py:133
 msgid "生成时间"
-msgstr "Generation Time"
+msgstr "Temps de génération"
 
 #: api/models_work.py:139
 msgid "分享链接"
-msgstr "Share Link"
+msgstr "Partager le lien"
 
 #: api/models_work.py:140
 msgid "链接列表"
-msgstr "Link List"
+msgstr "Liste des liens"
 
 #: api/views_api.py:20
 msgid "请求方式错误！请使用POST方式。"
-msgstr "Request method error! Please use the POST method."
+msgstr "Erreur de méthode pour la reqûete ! Veuillez utiliser la méthode POST."
 
 #: api/views_api.py:34
 msgid "帐号或密码错误！请重试，多次重试后将被锁定IP！"
 msgstr ""
-"Account or password error! Please retry. After multiple retries, the IP will "
-"be locked!"
+"Erreur de compte ou de mot de passe ! Veuillez réessayer. Après plusieurs "
+"tentatives, l'adresse IP sera bloquée!"
 
 #: api/views_api.py:72
 msgid "请求方式错误！"
-msgstr "Request method error!"
+msgstr "Erreur méthode de requête !"
 
 #: api/views_api.py:80
 msgid "异常请求！"
-msgstr "Abnormal request!"
+msgstr "Requête anormale!"
 
 #: api/views_api.py:93 api/views_api.py:213
 msgid "错误的提交方式！"
-msgstr "Incorrect submission method!"
+msgstr "Méthode de soumission incorrecte !"
 
 #: api/views_api.py:121
 msgid "拉取列表错误！"
-msgstr "Error fetching list!"
+msgstr "Erreur lors de la récupération de la liste !"
 
 #: api/views_api.py:200
 msgid "更新地址簿有误"
-msgstr "Error updating address book"
+msgstr "Erreur lors de la mise à jour du carnet d'adresses"
 
 #: api/views_api.py:250
 msgid "在线"
-msgstr "Online"
+msgstr "En ligne"
 
 #: api/views_api.py:320
 msgid "好的"
-msgstr "Okay"
+msgstr "D'accord"
 
 #: api/views_front.py:56
 msgid "model_to_dict接收的参数必须是模型对象"
-msgstr "The parameter received by model_to_dict must be a model object"
+msgstr "Le paramètre reçu par model_to_dict doit être un model object"
 
 #: api/views_front.py:61
 #, python-brace-format
 msgid "model_to_dict,要替换成{replace_field}字段已经存在了"
-msgstr ""
-"model_to_dict, the field to be replaced with {replace_field} already exists"
+msgstr "model_to_dict, le champ à remplacer par {replace_field} existe déjà"
 
 #: api/views_front.py:66
 #, python-brace-format
 msgid "model_to_dict,要新增默认值，但字段{default_key}已经存在了"
 msgstr ""
-"model_to_dict, to add default values, but the field {default_key} already "
-"exists"
+"model_to_dict, pour ajouter des valeurs par défaut, mais le champ "
+"{default_key} existe déjà"
 
 #: api/views_front.py:140
 msgid "出了点问题，未获取用户名或密码。"
-msgstr "There was a problem, username or password not obtained."
+msgstr ""
+"Il y a eu un problème, le nom d'utilisateur ou le mot de passe n'a pas été "
+"obtenu."
 
 #: api/views_front.py:147
 msgid "帐号或密码错误！"
-msgstr "Account or password error!"
+msgstr "Erreur de compte ou de mot de passe !"
 
 #: api/views_front.py:159
 msgid "当前未开放注册，请联系管理员！"
-msgstr "Registration is currently not open, please contact the administrator!"
+msgstr ""
+"Les inscriptions ne sont actuellement pas ouvertes, veuillez contacter "
+"l'administrateur !"
 
 #: api/views_front.py:166
 msgid "用户名不得小于3位"
-msgstr "Username must be at least 3 characters"
+msgstr "Le nom d'utilisateur doit comporter au moins 3 caractères"
 
 #: api/views_front.py:171
 msgid "密码长度不符合要求, 应在8~20位。"
 msgstr ""
-"Password length does not meet requirements, should be between 8~20 "
-"characters."
+"La longueur du mot de passe ne répond pas aux exigences, elle doit être "
+"comprise entre 8 et 20 caractères."
 
 #: api/views_front.py:177
 msgid "用户名已存在。"
-msgstr "Username already exists."
+msgstr "Le nom d'utilisateur existe déjà."
 
 #: api/views_front.py:208
 msgid "yes"
-msgstr ""
+msgstr "oui"
 
 #: api/views_front.py:208
 msgid "no"
-msgstr ""
+msgstr "non"
 
 #: api/views_front.py:209 api/views_front.py:224 api/views_front.py:251
 msgid "X"
@@ -777,35 +784,20 @@ msgstr ""
 
 #: api/views_front.py:221 api/views_front.py:248
 msgid "Online"
-msgstr ""
+msgstr "En ligne"
 
 #: api/views_front.py:492
 msgid "设备信息表"
-msgstr "Device Information Table"
+msgstr "Tableau d'informations pour le périphérique"
 
 #: api/views_front.py:591
 msgid "数据为空。"
-msgstr "Data is empty."
+msgstr "Les données sont vides."
 
 #: api/views_generator.py:109 api/views_generator.py:146
 msgid "Starting generator...please wait"
-msgstr ""
+msgstr "Démarrage du générateur... veuillez patienter"
 
 #: api/views_generator.py:165
 msgid "File saved successfully!"
-msgstr ""
-
-#~ msgid "未定义"
-#~ msgstr "Undefined"
-
-#~ msgid "离线"
-#~ msgstr "Offline"
-
-#~ msgid "是"
-#~ msgstr "Yes"
-
-#~ msgid "否"
-#~ msgstr "No"
-
-#~ msgid "未知"
-#~ msgstr "UNKNOWN"
+msgstr "Fichier enregistré avec succès !"

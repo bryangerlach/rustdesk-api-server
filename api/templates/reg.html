@@ -44,7 +44,7 @@
             </div>
             <!-- Wrong number -->
             <div class="layui-inline">
-                <i class="layui-icon" id="pwr" style="color: red; font-weight: bolder;" hidden>Gauge</i>
+                <i class="layui-icon" id="pwr" style="color: red; font-weight: bolder;" hidden>{{ "Gauge" | translate }}</i>
             </div>
         </div>
             <!-- 确认密码 -->
@@ -116,6 +116,17 @@
  
         //
         //添加表单监听事件,提交注册信息
+        form.config = {
+            verify: {
+                required: function(value) {
+                    if (!/[\S]+/.test(value)) {
+                        return '{{ "必填项不能为空" | translate }}';
+                    }
+                    },
+            },
+            autocomplete: null
+        };
+
         form.on('submit(sub)', function() {
             $.ajax({
                 url:'/api/user_action?action=register',

@@ -169,7 +169,7 @@ else:
 LANGUAGES = (
     ('zh-hans', '中文简体'),
     ('en', 'English'),
-
+    ('fr', 'Français'),
 )
 
 LOCALE_PATHS = (

@@ -69,11 +69,14 @@
       ]  //disabled Whether to disable  checked Whether to choose
       ,id: 'device' //Define indexes You can use it when reloading RELOAD or getting the right data
     });
-    $("#create_bak").click(function(){
-        
+    $("#create_bak").click(function(){    
         var getData = transfer.getData('device');
-        alert(JSON.stringify(getData));
-
+        alert(JSON.stringify(getData),
+                { 
+                title:'{{ "信息" | translate }}',
+                btn:['{{ "确定" | translate }}']
+                }
+        );
     });
     $("#create").click(function(){
         var getData = transfer.getData('device');
@@ -91,8 +94,13 @@
                      //     time:false //取消自动关闭
                     // });  
                     //layer.msg('注册成功，请前往登录页登录。');
-                    layer.alert('{{ "成功！如需分享，请复制以下链接给其他人：<br>" | translate }}'+ window.location + '/' +data.shash, function (index) {
-                        location.reload();});                    
+                    layer.alert('{{ "成功！如需分享，请复制以下链接给其他人：<br>" | translate }}'+ window.location + '/' +data.shash, 
+                    {
+                      title:'{{ "信息" | translate }}',
+                      btn:['{{ "确定" | translate }}']
+                    },
+                    function (index) {location.reload();}
+                  );                    
                 }else {
                     layer.msg(data.msg);
                 }
