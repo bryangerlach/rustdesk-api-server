@@ -4,7 +4,7 @@ from api.models import UserProfile
 class GenerateForm(forms.Form):
     #Platform
     platform = forms.ChoiceField(choices=[('windows','Windows'),('linux','Linux (currently unavailable)'),('android','Android (testing now available)')], initial='windows')
-    version = forms.ChoiceField(choices=[('master','beta'),('1.3.2','1.3.2'),('1.3.1','1.3.1'),('1.3.0','1.3.0')], initial='1.3.2')
+    version = forms.ChoiceField(choices=[('master','nightly'),('1.3.8','1.3.8'),('1.3.7','1.3.7'),('1.3.6','1.3.6'),('1.3.5','1.3.5'),('1.3.4','1.3.4'),('1.3.3','1.3.3')], initial='1.3.8')
     delayFix = forms.BooleanField(initial=True, required=False)
 
     #General
