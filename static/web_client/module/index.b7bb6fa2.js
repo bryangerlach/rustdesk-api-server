@@ -7740,7 +7740,7 @@ function Wi() {
 const Hi = 21116,
     ii = api;
 let ni = localStorage.getItem("rendezvous-server") || ii[0];
-const protocol = window.location.protocol === 'wss://';
+const protocol = 'wss://';
 const Zi = protocol;
 
 class Gi {
